@@ -23,7 +23,7 @@ def main():
             raw = encode(raw)
             print("Your password has been encoded and stored!")
         elif select == 2:
-            print(f"The encoded password is {raw}, and the original password is {decode(raw)}")
+            print(f"The encoded password is {raw}, and the original password is {decode(raw)}.")
         elif select == 3:
             break
 if __name__ == "__main__":
