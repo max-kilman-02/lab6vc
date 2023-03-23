@@ -7,7 +7,12 @@ def encode(x):
         password += str(dig)
     return password
 def decode(x):
-    # add decode here
+    password = ""
+    for char in x:
+        dig = int(char)+10
+        dig = (dig-3)%10
+        password += str(dig)
+    return password
 def main():
     raw = ""
     while True:
